@@ -107,6 +107,9 @@ label{
     margin-top:100px;
     font-size:30px
 }
+#contact img{
+    height: 30px;   
+}
 .container-contact{
     width: 80%;
     margin: 0 auto;
