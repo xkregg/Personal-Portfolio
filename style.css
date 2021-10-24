@@ -41,7 +41,7 @@ nav ul{
 #top{
     width: 100%;
 }
-#top img{
+.main-pic{
     margin-top: 220px;
     float: left;
     width: 551px;
@@ -53,6 +53,9 @@ nav ul{
     margin-top: 350px;
     text-align: center;
 }
+.intro img{
+    height:50px;
+}
 label{
     font-size:60px;
     margin-bottom:20px;
@@ -62,11 +65,6 @@ label{
 #top p{
     font-size:30px;
 }
-i.fas, /* styling for the font awesome*/
-i.fab {
-    color:#F2F2F2;
-}
-
 #about{
     text-align: center;
 }
