@@ -1,123 +1,152 @@
-body{
+*{
+    padding: 0;
     margin: 0;
+}
+body{
     background-color: #2d3436;
     background-image: linear-gradient(315deg, #000000 0%, #2d3436 74%);
     color:#F2F2F2;
     font-family: Arial, Helvetica, sans-serif;
+    line-height:1.4;
     min-height: 100vh;
-    line-height:1.6em;
 }
-
-nav ul{
-    list-style: none;
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding:0 0.1rem;
+    min-height: 100%;
 }
 #navbar{
-    position: fixed;
-    background-color: #000000;
-    width: 100%;
-    text-align: center;
+    padding: 1rem;
+    position:fixed;
     top:0;
+    width:100%;
 }
-#navbar li{
-    display:inline;
+.navbar-container{
+    text-align: right;
+    padding: 0.2rem 0;
 }
-#navbar a{
-    text-decoration:none;
-    padding-right:20px;
+.navbar-container a{
+    text-decoration: none;
     color:#F2F2F2;
-    font-size: 20px;
+    letter-spacing: .8px;
+    display: inline-block;
+    padding: 0.2rem 0.2rem;
+    font-size: 2rem;
+    border: 1px solid transparent;
 }
-
-#navbar a:hover{
+.navbar-container a:hover{
     color:#A62929;
+    border-bottom: 2px solid #A62929;
 }
-
-.container{
-    width: 80%;
-    margin: 0 auto;
-    overflow:hidden;
-    height:725px;
+#home{
+    padding-top:11rem;
+    
+    height: auto;
 }
-#top{
-    width: 100%;
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-.main-pic{
-    margin-top: 220px;
-    float: left;
-    width: 551px;
-    height: 506px;
+.home-img{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content:center;
+}
+.home-img img{
+    border-radius: 5%;
+    width: 90%;
+    height: auto;
 }
 .intro{
-    float:right;
     width: 50%;
-    margin-top: 350px;
     text-align: center;
-}
-.intro img{
-    height:50px;
+    padding-top: 3em;
+    padding-left:50px;
 }
 label{
-    font-size:60px;
-    margin-bottom:20px;
+    font-size: 60px;
     font-weight: bold;
-    display: block;
 }
-#top p{
-    font-size:30px;
+.intro p{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.intro img{
+    height:2rem;
 }
 #about{
-    text-align: center;
+    padding-top:10rem;
 }
-#about p{
-    font-size: 20px;
+#about label{
+    font-size: 5em;
 }
 .text{
-    margin-top: 150px;
-    width: 40%;
-    float:left;
-    justify-content: space-evenly;
+    width: 50%;
+}
+.text p{
+    font-size: 20px;
+    text-align: justify;
 }
 .profile{
-    margin-top: 80px;
-    width: 60;
-    float:right
+    width:50%;
+    padding-left: 30px;
+    display: flex;
+    justify-content:center;
+}
+.profile img{
+    width: 70%;
+    height: auto;
+}
+#skills{
+    padding-top: 10em;
 }
 #skills label{
-    margin-top: 100px;
+    font-size:5em;
 }
 #skills img{
     height: 150px;
-    padding: 40px;
+    padding: .5em;
+}
+#project{
+    padding-top: 10em;
 }
 #project label{
-    margin-top:80px;
+    font-size: 5em;
 }
 #project img{
     height: 320px; 
 }
 .project-container{
     width:33.3%;
-    float:left;
     text-align:center;
 }
 #project p{
     font-size: 30px;
 }
+#contact{
+    padding-top: 10em;
+    min-height: 100vh;
+}
+.flex-container-contact{
+    display: flex;
+}
 #contact label{
-    margin-top:100px;
-    font-size:30px
+    font-size: 5em;
 }
-#contact img{
-    height: 30px;   
+#contact p{
+    font-size: 2em;
 }
-.container-contact{
-    width: 80%;
-    margin: 0 auto;
-    overflow:hidden;
-    text-align:center;
+.bold{
+    font-weight: 800;
 }
-#contact p,i{
-    display: inline;
-    padding: 10px;
-    font-size: 20px;
+
+
+@media screen and (max-width:600px){ /*mobile*/
+    .flex-container{
+        flex-direction:column;
+    }
 }
