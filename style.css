@@ -17,9 +17,6 @@ body{
     min-height: 100%;
 }
 #navbar{
-    padding: 1rem;
-    position:fixed;
-    top:0;
     width:100%;
 }
 .navbar-container{
@@ -40,9 +37,8 @@ body{
     border-bottom: 2px solid #A62929;
 }
 #home{
-    padding-top:11rem;
-    
-    height: auto;
+    padding-top:4rem;
+    height: 100%;
 }
 .flex-container{
     display: flex;
@@ -79,7 +75,7 @@ label{
     height:2rem;
 }
 #about{
-    padding-top:10rem;
+    padding-top:5rem;
 }
 #about label{
     font-size: 5em;
@@ -102,7 +98,7 @@ label{
     height: auto;
 }
 #skills{
-    padding-top: 10em;
+    padding-top: 5rem;
 }
 #skills label{
     font-size:5em;
@@ -112,7 +108,7 @@ label{
     padding: .5em;
 }
 #project{
-    padding-top: 10em;
+    padding-top: 5rem;
 }
 #project label{
     font-size: 5em;
@@ -128,8 +124,7 @@ label{
     font-size: 30px;
 }
 #contact{
-    padding-top: 10em;
-    min-height: 100vh;
+    padding-top: 5rem;
 }
 .flex-container-contact{
     display: flex;
@@ -144,9 +139,80 @@ label{
     font-weight: 800;
 }
 
-
-@media screen and (max-width:600px){ /*mobile*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px){
     .flex-container{
         flex-direction:column;
     }
+    .navbar-container{
+        text-align: center;
+    }
+    .navbar-container a{
+        font-size: 1.5rem;
+    }
+    .intro{
+        width: 80%;
+        text-align: center;
+        padding-top: 3em;
+        padding-left: 0;
+    }
+    .intro p{
+        margin-bottom: 10px;
+    }
+    #about label{
+        font-size: 4em;
+    }
+    .text{
+        width: 80%;
+    }
+    .profile{
+        display: none;
+    }
+    #skills{
+        padding-top: 5rem;
+    }
+    #skills label{
+        font-size:4em;
+    }
+    #skills img{
+        height: 150px;
+        padding: .5em;
+    }
+    #project{
+        text-align: center;
+    }
+    #project label{
+        font-size: 4em;
+    }
+    #project img{
+        padding-top: 10px;
+    }
+    .project-container{
+        width:80%;
+        text-align:center;
+        padding-top: 2em;
+    }
+    #contact{
+        text-align: center;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px){
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
 }
