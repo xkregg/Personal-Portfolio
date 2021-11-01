@@ -150,17 +150,24 @@ label{
     .navbar-container a{
         font-size: 1.5rem;
     }
+    .home-img{
+        width: 80%;
+    }
     .intro{
         width: 80%;
         text-align: center;
         padding-top: 3em;
         padding-left: 0;
     }
+    .intro label{
+        font-size: 2em;
+    }
     .intro p{
         margin-bottom: 10px;
+        font-size: 1.5em;
     }
     #about label{
-        font-size: 4em;
+        font-size: 3em;
     }
     .text{
         width: 80%;
@@ -170,9 +177,10 @@ label{
     }
     #skills{
         padding-top: 5rem;
+        text-align: center;
     }
     #skills label{
-        font-size:4em;
+        font-size:3em;
     }
     #skills img{
         height: 150px;
@@ -182,7 +190,7 @@ label{
         text-align: center;
     }
     #project label{
-        font-size: 4em;
+        font-size: 3em;
     }
     #project img{
         padding-top: 10px;
@@ -195,24 +203,67 @@ label{
     #contact{
         text-align: center;
     }
+    #contact label{
+        font-size: 3em;
+    }
+    #contact p{
+        font-size: 1.3em;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px){
-    
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    
+@media only screen and (max-width: 651px){
+    .navbar-container{
+        text-align: center;
+    }
+    .flex-container{
+        justify-content: center;
+    }
+    .home-img{
+        width: 60%;
+    }
+    .intro{
+        width: 40%;
+    }
+    label{
+        font-size: 40px;
+    }
+    .intro p{
+        font-size: 20px;
+    }
+    #about{
+        padding-top:5rem;
+    }
+    #about label{
+        font-size: 2em;
+    }
+    .text{
+        width: 60%;
+    }
+    .profile{
+        width:40%;
+    }
+    #skills label{
+        font-size:3em;
+    }
+    #skills img{
+        height: 150px;
+        padding: .5em;
+    }
+    #project{
+        padding-top: 5rem;
+    }
+    #project label{
+        font-size: 5em;
+    }
+    #project img{
+        height: 320px; 
+    }
+    .project-container{
+        width:33.3%;
+        text-align:center;
+    }
+    #project p{
+        font-size: 30px;
+    }
 }
