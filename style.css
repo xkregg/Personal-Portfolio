@@ -76,6 +76,7 @@ label{
 }
 #about{
     padding-top:5rem;
+    margin-left:20px;
 }
 #about label{
     font-size: 5em;
@@ -99,6 +100,7 @@ label{
 }
 #skills{
     padding-top: 5rem;
+    padding-left: 20px;
 }
 #skills label{
     font-size:5em;
@@ -109,6 +111,7 @@ label{
 }
 #project{
     padding-top: 5rem;
+    padding-left: 20px;
 }
 #project label{
     font-size: 5em;
@@ -125,9 +128,6 @@ label{
 }
 #contact{
     padding-top: 5rem;
-}
-.flex-container-contact{
-    display: flex;
 }
 #contact label{
     font-size: 5em;
@@ -154,7 +154,7 @@ label{
         width: 80%;
     }
     .intro{
-        width: 80%;
+        width: 90%;
         text-align: center;
         padding-top: 3em;
         padding-left: 0;
@@ -200,9 +200,6 @@ label{
         text-align:center;
         padding-top: 2em;
     }
-    #contact{
-        text-align: center;
-    }
     #contact label{
         font-size: 3em;
     }
@@ -210,41 +207,50 @@ label{
         font-size: 1.3em;
     }
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 651px){
+@media only screen and (max-width: 768px){
     .navbar-container{
         text-align: center;
     }
     .flex-container{
         justify-content: center;
+        flex-direction: column;
     }
     .home-img{
-        width: 60%;
+        width: 50%;
+    }
+    .home-img img{
+        width: 100%;
     }
     .intro{
-        width: 40%;
+        padding-right: 10px;
+        width: 80%;
     }
     label{
-        font-size: 40px;
+        font-size: 50px;
     }
     .intro p{
-        font-size: 20px;
+        font-size: 30px;
     }
     #about{
         padding-top:5rem;
     }
     #about label{
-        font-size: 2em;
+        font-size: 5em;
     }
     .text{
-        width: 60%;
+        width: 80%;
+    }
+    .text p{
+        font-size:30px
     }
     .profile{
-        width:40%;
+        display: none;
+    }
+    #skills{
+        margin-left: 20px;
     }
     #skills label{
-        font-size:3em;
+        font-size:5em;
     }
     #skills img{
         height: 150px;
@@ -252,18 +258,19 @@ label{
     }
     #project{
         padding-top: 5rem;
+        margin-left: 20px;
     }
     #project label{
         font-size: 5em;
     }
-    #project img{
-        height: 320px; 
-    }
     .project-container{
-        width:33.3%;
+        width:80%;
         text-align:center;
     }
     #project p{
-        font-size: 30px;
+        font-size: 40px;
+    }
+    #contact p{
+        font-size:2rem;
     }
 }
