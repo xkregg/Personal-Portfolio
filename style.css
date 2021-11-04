@@ -76,7 +76,6 @@ label{
 }
 #about{
     padding-top:5rem;
-    margin-left:20px;
 }
 #about label{
     font-size: 5em;
@@ -100,7 +99,6 @@ label{
 }
 #skills{
     padding-top: 5rem;
-    padding-left: 20px;
 }
 #skills label{
     font-size:5em;
@@ -111,7 +109,6 @@ label{
 }
 #project{
     padding-top: 5rem;
-    padding-left: 20px;
 }
 #project label{
     font-size: 5em;
@@ -235,16 +232,19 @@ label{
         font-size: 30px;
     }
     #about{
-        padding-top:5rem;
+        padding-top:5rem;   
+    }
+    #project label{
+        padding-left: 20px;
     }
     #about label{
-        font-size: 5em;
+        font-size: 4em;
     }
     .text{
         width: 80%;
     }
     .text p{
-        font-size:30px
+        font-size:30px;
     }
     .profile{
         display: none;
@@ -261,7 +261,6 @@ label{
     }
     #project{
         padding-top: 5rem;
-        margin-left: 20px;
     }
     #project label{
         font-size: 5em;
@@ -273,7 +272,15 @@ label{
     #project p{
         font-size: 40px;
     }
+    #contact{
+        padding-left: 40px;
+    }
     #contact p{
         font-size:2rem;
+    }
+}
+@media only screen and (max-width: 1024px){
+    body:not(#home #navigation){
+        padding-left: 10px;
     }
 }
